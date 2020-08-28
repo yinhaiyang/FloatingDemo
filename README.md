@@ -1,16 +1,7 @@
-# batterylevel
+# A Simple Flutter Floating Window Demo
+之前没有用过 Flutter 和原生交互的东西，先练习了官网的 batterylevel sample（通过原生获取电量），然后增加了悬浮窗的功能
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Key Files
+- `main.dart` flutter 布局文件，通过 MethodChannel 调用原生方法
+- `MainActivity.kt` Android 主入口，通过 MethodChannel 与 Flutter 通讯
+- `FloatingService.kt` 悬浮窗的 Service
